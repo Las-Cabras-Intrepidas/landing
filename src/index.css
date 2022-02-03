@@ -19,13 +19,6 @@ hr {
   max-height: 8%;
 }
 
-.first-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .cover-image {
   position: absolute;
   background-repeat: no-repeat;
@@ -64,7 +57,6 @@ hr {
   .first-banner h2 {
     font-size: 25px;
   }
-
   .first-banner p {
     font-size: 20px;
   }
@@ -74,7 +66,6 @@ hr {
   .first-banner h2 {
     font-size: 40px;
   }
-
   .first-banner p {
     font-size: 28px;
   }
@@ -90,7 +81,6 @@ hr {
   .first-banner h2 {
     font-size: 50px;
   }
-
   .first-banner p {
     font-size: 35px;
   }
@@ -126,10 +116,6 @@ hr {
   max-width: 75%;
   font-size: 0.7em;
   background-color: #fff;
-  border: 1px solid #fff;
-  color: #012579;
-  border-radius: 20px;
-  height: 22px;
 }
 
 .first-banner button:hover {
@@ -173,7 +159,6 @@ hr {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -190,6 +175,8 @@ hr {
 
 .second-title {
   color: #002088;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .second-parag {
@@ -198,9 +185,10 @@ hr {
 }
 
 /* tercera seccion */
-.third-title {
-  text-align: center;
-  color: #002088;
+
+.third-section {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .third-container {
@@ -211,6 +199,11 @@ hr {
 
 .third-content {
   margin-left: 1rem;
+  width: 45%;
+}
+
+.third-img {
+  width: 50%;
 }
 
 .parag-third {
@@ -219,24 +212,43 @@ hr {
 }
 
 /* cuarta seccion */
-.plane-img {
-  width: 100%;
+
+.plane-section {
+  display: flex;
+  background-image: url('./assets/avion-landing.jpg');
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.empty-div {
+  width: 49%;
 }
 
 .container-fourth {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 
 .fourth-text {
   color: #002088;
 }
 
-.img-flex-girls {
-  width: 50%;
+.container-fourth button {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* productos seccion */
+
+.fourth-section {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
 .row-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -259,31 +271,39 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 2rem;
-  margin-top: 1.5rem;
+}
+
+.img-container {
+  position: relative;
 }
 
 .img-box {
-  position: relative;
-  max-width: 100%;
+  width: 99%;
   border-radius: 1rem 1rem 0 0;
 }
 
 .icon {
   position: absolute;
-  bottom: -15px;
+  left: 35%;
+  bottom: -7%;
   color: #fff;
-  font-size: 1.25rem;
-  right: 40%;
-  background: var(--main-color);
+  font-size: 1rem;
+  background: #012bb3;
   border: 2px solid #fff;
-  padding: 0.6rem;
+  padding: 0.4rem;
   border-radius: 50%;
   text-align: center;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 1.5rem;
 }
 
 .availability {
   color: green;
   font-weight: 600;
   text-align: start;
+  margin: 0;
+  margin-top: 0.5rem;
 }
