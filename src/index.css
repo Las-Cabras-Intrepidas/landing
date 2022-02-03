@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+hr {
+  text-decoration: none;
+}
+
+section {
+}
+.first-section {
+  background: url(assets/cielo_landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10%;
+  overflow: visible;
+}
+
+.container-hero {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 65%;
+  height: 40%;
+  padding: 5px;
+}
+
+img {
+  width: 90%;
+  border: 1px solid #fff;
+}
+
+.first-par {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 450px) {
+  .container-hero {
+  }
+}
+.img-principal {
+}
+
+.container-hero h2 {
+  color: #fff;
+  font-size: 16px;
+}
+@media (min-width: 550px) {
+  .container-hero h2 {
+    font-size: 25px;
+  }
+  .container-hero p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 850px) {
+  .container-hero h2 {
+    font-size: 40px;
+  }
+  .container-hero p {
+    font-size: 35px;
+  }
+  .container-hero .btn-hero {
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  .container-hero h2 {
+    font-size: 50px;
+  }
+  .container-hero p {
+    font-size: 45px;
+  }
+  .container-hero .btn-hero {
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+  }
+}
+
+.btn-hero {
+  margin-top: -17px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #012bb3;
+  color: #fff;
+  padding: 7px;
+  font-weight: 600;
+}
+.btn-hero:hover {
+  background-color: #002088;
+}
+.container-hero p {
+  color: #fff;
+}
+/* segundo banner */
+.second-section {
+  width: 100%;
+  height: 100%;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-img {
+  width: 60%;
+}
+
+.second-part {
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+}
+
+.second-title {
+  color: #002088;
+}
+
+.second-parag {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* tercera seccion */
+.third-title {
+  text-align: center;
+  color: #002088;
+}
+.third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third-content {
+  margin-left: 1rem;
+}
+
+.parag-third {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.third-img {
+}
