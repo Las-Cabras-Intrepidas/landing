@@ -57,6 +57,7 @@ hr {
   .first-banner h2 {
     font-size: 25px;
   }
+
   .first-banner p {
     font-size: 20px;
   }
@@ -66,6 +67,7 @@ hr {
   .first-banner h2 {
     font-size: 40px;
   }
+
   .first-banner p {
     font-size: 28px;
   }
@@ -81,6 +83,7 @@ hr {
   .first-banner h2 {
     font-size: 50px;
   }
+
   .first-banner p {
     font-size: 35px;
   }
@@ -215,7 +218,7 @@ hr {
 
 .plane-section {
   display: flex;
-  background-image: url('./assets/avion-landing.jpg');
+  background-image: url("./assets/avion-landing.jpg");
   background-size: cover;
   text-align: center;
   align-items: center;
@@ -236,6 +239,7 @@ hr {
   color: #002088;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .container-fourth button {
   width: 70%;
   margin: 0 auto;
