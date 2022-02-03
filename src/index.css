@@ -3,116 +3,175 @@ body {
   padding: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+
 hr {
   text-decoration: none;
 }
 
-section {
+/* PRIMER BANNER */
+
+.logotipo {
+  position: absolute;
+  z-index: 5;
+  top: 1%;
+  left: 1%;
+  max-width: 8%;
+  max-height: 8%;
 }
+
 .first-section {
-  background: url(assets/cielo_landing.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 10%;
-  overflow: visible;
-}
-
-.container-hero {
   position: relative;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+.cover-image {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: visible;
+  width: 100%;
+}
+
+.first-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-
-  width: 65%;
-  height: 40%;
-  padding: 5px;
+  width: 68%;
+  height: 70%;
+  margin-top: 12%;
 }
 
-img {
-  width: 90%;
-  border: 1px solid #fff;
-}
-
-.first-par {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-@media (min-width: 450px) {
-  .container-hero {
-  }
-}
-.img-principal {
-}
-
-.container-hero h2 {
+.first-banner h2 {
   color: #fff;
   font-size: 16px;
 }
-@media (min-width: 550px) {
-  .container-hero h2 {
+
+.first-banner p {
+  font-size: 0.85em;
+  margin-top: 2.5%;
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  .first-banner h2 {
     font-size: 25px;
   }
-  .container-hero p {
+
+  .first-banner p {
     font-size: 20px;
   }
 }
-@media (min-width: 850px) {
-  .container-hero h2 {
+
+@media (min-width: 860px) {
+  .first-banner h2 {
     font-size: 40px;
   }
-  .container-hero p {
-    font-size: 35px;
+
+  .first-banner p {
+    font-size: 28px;
   }
-  .container-hero .btn-hero {
+
+  .first-banner .btn-hero {
     font-size: 18px;
     width: 160px;
     height: 40px;
   }
 }
-@media (min-width: 1100px) {
-  .container-hero h2 {
+
+@media (min-width: 1080px) {
+  .first-banner h2 {
     font-size: 50px;
   }
-  .container-hero p {
-    font-size: 45px;
+
+  .first-banner p {
+    font-size: 35px;
   }
-  .container-hero .btn-hero {
+
+  .first-banner .btn-hero {
     font-size: 20px;
     width: 200px;
     height: 60px;
   }
 }
 
-.btn-hero {
-  margin-top: -17px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background-color: #012bb3;
-  color: #fff;
-  padding: 7px;
-  font-weight: 600;
-}
-.btn-hero:hover {
-  background-color: #002088;
-}
-.container-hero p {
-  color: #fff;
-}
-/* segundo banner */
-.second-section {
-  width: 100%;
-  height: 100%;
+@media (min-width: 1800px) {
+  .first-banner h2 {
+    font-size: 55px;
+  }
+
+  .first-banner p {
+    font-size: 55px;
+    font-weight: 600;
+  }
 }
 
+.first-banner img {
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+
+.first-banner button {
+  position: relative;
+  margin-top: -3%;
+  width: 40%;
+  max-width: 75%;
+  font-size: 0.7em;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #012579;
+  border-radius: 20px;
+  height: 22px;
+}
+
+.first-banner button:hover {
+  background-color: #012579;
+  color: #fff;
+}
+
+@media (min-width: 550px) {
+  .first-banner button {
+    height: 30px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .first-banner button {
+    height: 40px;
+    font-size: 1.1em;
+    border: 2px solid #fff;
+    margin-top: -2.5%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .first-banner img {
+    margin-top: 3%;
+  }
+
+  .first-banner button {
+    margin-top: -1.5%;
+    font-size: 1.3em;
+    height: 50px;
+  }
+}
+
+/* FIN */
+
+/* segundo banner */
 .second-section {
+  margin-top: 33%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -137,16 +196,19 @@ img {
   font-size: 16px;
   font-weight: 600;
 }
+
 /* tercera seccion */
 .third-title {
   text-align: center;
   color: #002088;
 }
+
 .third-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .third-content {
   margin-left: 1rem;
 }
@@ -155,6 +217,7 @@ img {
   font-size: 16px;
   font-weight: 600;
 }
+
 /* cuarta seccion */
 .plane-img {
   width: 100%;
@@ -164,6 +227,7 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .fourth-text {
   color: #002088;
 }
